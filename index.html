@@ -175,7 +175,7 @@
 
         </div>
         <!-- header footer -->
-        <div class="absolute -bottom-28 left-32  grid  w-4/5  lg:mx-auto grid-cols-5 bg-white  rounded-lg mb-4 ">
+        <div class="hidden lg:grid absolute -bottom-28 left-32  grid  w-4/5  lg:mx-auto grid-cols-5 bg-white  rounded-lg mb-4 ">
             <div class="card pb-10 ">
                 <figure class="px-10 pt-10">
                     <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -225,50 +225,54 @@
         </div>
 
     </header>
-    <main class="container md:mx-auto mt-40">
+    <main class="container md:mx-auto mt-24 ">
         <!-- deal of the day section -->
         <section>
             <!-- day and time  -->
-            <div class="flex flex-col lg:flex-row text-center lg:text-justify ">
-                <div class="">
-                    <h2>Deal of the day</h2>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+            <div class="grid grid-cols-1 lg:grid-cols-2 ">
+                <div class="text-center lg:text-start">
+                    <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                    <p class="text-base font-medium mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
 
+
                 <!-- coundown -->
-                <div class="text-center items-center">
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:15;"></span>
-                            </span>
-                            days
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:10;"></span>
-                            </span>
-                            hours
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:24;"></span>
-                            </span>
-                            min
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:3;"></span>
-                            </span>
-                            sec
-                        </div>
+
+
+                <div class="grid grid-flow-col  gap-5 p-14 lg:p-0 lg:ml-auto">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span class="text-5xl font-extrabold" style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span  class="text-5xl font-extrabold" style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span  class="text-5xl font-extrabold" style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col ">
+                        <span class="countdown font-mono text-5xl">
+                            <span  class="text-5xl font-extrabold" style="--value:3;"></span>
+                        </span>
+                        sec
                     </div>
                 </div>
             </div>
 
+
+
             <!-- all card -->
-            <div class="grid text-center items-center gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
+            <div class="grid text-center items-center gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
                 <!-- card one -->
                 <div class="card  bg-base-100 shadow-2xl">
                     <figure class="px-10 pt-10">
@@ -733,7 +737,8 @@
                 <div class="gap-6">
                     <div class="flex items-center gap-2 text-right flex-row-reverse">
                         <div class="bg-gray-300 rounded-full p-2 ">
-                            <i class="fa-solid fa-apple-whole p-2"></i></div>
+                            <i class="fa-solid fa-apple-whole p-2"></i>
+                        </div>
                         <div>
                             <h4 class="text-2xl font-extrabold mb-3 ">Integrated Supplier</h4>
                             <hr class="border-1 w-1/5 ml-auto">
@@ -743,7 +748,8 @@
                     </div>
                     <div class="flex items-center gap-2 text-right flex-row-reverse my-8">
                         <div class="bg-gray-300 rounded-full p-2 ">
-                            <i class="fa-solid fa-ice-cream p-2"></i></div>
+                            <i class="fa-solid fa-ice-cream p-2"></i>
+                        </div>
                         <div>
                             <h4 class="text-2xl font-extrabold mb-3 ">Sustainable Practice</h4>
                             <hr class="border-1 w-1/5 ml-auto">
@@ -753,7 +759,8 @@
                     </div>
                     <div class="flex items-center gap-2 text-right flex-row-reverse">
                         <div class="bg-gray-300 rounded-full p-2">
-                            <i class="fa-solid fa-thumbs-up p-2"></i></div>
+                            <i class="fa-solid fa-thumbs-up p-2"></i>
+                        </div>
                         <div>
                             <h4 class="text-2xl font-extrabold mb-3 ">The Benefits Only</h4>
                             <hr class="border-1 w-1/5 ml-auto">
