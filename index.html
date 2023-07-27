@@ -47,6 +47,51 @@
 
 <body class="font-Sans">
     <header class="container  md:mx-auto static">
+        <!-- navbar -->
+        <div class="navbar lg:bg-primary-bg lg:rounded-full lg:my-7 text-black lg:text-white">
+            <div class="navbar-start  hidden lg:flex">
+                <ul class="menu menu-horizontal px-1  tex-lg font-medium">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 3</a></li>
+                    <li><a>Item 3</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+
+            </div>
+            <div class="navbar-center ">
+                <ul class="flex items-center">
+                    <li><img src="images/logo.png" alt=""></li>
+                    <h2 class="text-xl lg:text-4xl font-semibold">Fruit Burst</h2>
+
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <div class="form-control hidden lg:flex mr-10 ">
+
+                    <span class="static "><input type="text" placeholder="Search hare"  class=" rounded-full border-none input md:w-auto lg:w-[400px] " /><i class="absolute right-28 top-[59px] text-black fa-solid fa-magnifying-glass"></i></span>
+                    
+                </div>
+
+                <div class="dropdown dropdown-bottom dropdown-end ">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 border-2 border-[#f85559] rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li><input type="search" placeholder="Search here" name="" id="" class="drop-shadow"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- header section start hare -->
         <div class="carousel w-full ">
             <!-- banner 1 -->
@@ -128,7 +173,7 @@
 
         </div>
         <!-- header footer -->
-        <div class="absolute -bottom-28 left-32  grid  w-4/5  lg:mx-auto grid-cols-5 bg-white  rounded-lg mb-4">
+        <div class="absolute -bottom-28 left-32  grid  w-4/5  lg:mx-auto grid-cols-5 bg-white  rounded-lg mb-4 ">
             <div class="card pb-10 ">
                 <figure class="px-10 pt-10">
                     <img src="images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -247,7 +292,8 @@
                         </div>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_1.showModal()">Details</button>
+                        <p class="text-primary-bg font-medium cursor-pointer" onclick="my_modal_3.showModal()">Details
+                        </p>
                         <dialog id="my_modal_1" class="modal modal-bottom  sm:modal-middle">
                             <form method="dialog" class="modal-box">
                                 <!-- modal card start -->
@@ -326,7 +372,8 @@
                         </div>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_2.showModal()">Details</button>
+                        <p class="text-primary-bg font-medium cursor-pointer" onclick="my_modal_3.showModal()">Details
+                        </p>
                         <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
                                 <!-- modal card start -->
@@ -405,7 +452,8 @@
                         </div>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_3.showModal()">Details</button>
+                        <p class="text-primary-bg font-medium cursor-pointer" onclick="my_modal_3.showModal()">Details
+                        </p>
                         <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
                                 <!-- modal card start -->
@@ -460,7 +508,7 @@
                     </div>
                 </div>
                 <!-- card four -->
-                <div class="card  bg-base-100 shadow-xl">
+                <div class="card  bg-base-100 shadow-2xl">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -484,7 +532,8 @@
                         </div>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn" onclick="my_modal_4.showModal()">Details</button>
+                        <p class="text-primary-bg font-medium cursor-pointer" onclick="my_modal_3.showModal()">Details
+                        </p>
                         <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
                                 <!-- modal card start -->
@@ -540,88 +589,96 @@
                 </div>
 
             </div>
+            <div class="text-center mt-7 mb-14">
+                <button class="btn bg-primary-bg text-white">Shop All</button>
+            </div>
+
         </section>
-        <section >
-                <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content">
-                        <div class="text-white">
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="text-white">
 
-                            <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
-                            <p class="text-base font-medium text-white">Contrary to popular belief, is not simply random text. It
-                                has roots in a piece of classical <br>
-                                Latin literature from 45 BC, making it over 2000 years old</p>
-                            <!-- meet team container -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                                <!-- card one -->
-                                <div class="card ">
-                                    <figure class="px-10 pt-10 ">
-                                        <img src="images/member1.png" alt="Shoes" class="rounded-full" />
-                                    </figure>
-                                    <div class="card-body items-center text-center text-white">
-                                        <h2 class="card-title text-2xl font-bold">Awlad Hossain</h2>
-                                        <p class="text-base font-medium">Fruits Expert</p>
-                                        <div class="flex text-primary-bg gap-3 text-2xl">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </div>
-
+                        <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
+                        <p class="text-base font-medium text-white">Contrary to popular belief, is not simply random
+                            text. It
+                            has roots in a piece of classical <br>
+                            Latin literature from 45 BC, making it over 2000 years old</p>
+                        <!-- meet team container -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                            <!-- card one -->
+                            <div class="card ">
+                                <figure class="px-10 pt-10 ">
+                                    <img src="images/member1.png" alt="Shoes" class="rounded-full" />
+                                </figure>
+                                <div class="card-body items-center text-center text-white">
+                                    <h2 class="card-title text-2xl font-bold">Awlad Hossain</h2>
+                                    <p class="text-base font-medium">Fruits Expert</p>
+                                    <div class="flex text-primary-bg gap-3 text-2xl">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
                                     </div>
-                                </div>
-                                <!-- card two -->
-                                <div class="card ">
-                                    <figure class="px-10 pt-10 ">
-                                        <img src="images/member2.png" alt="Shoes" class="rounded-full" />
-                                    </figure>
-                                    <div class="card-body items-center text-center text-white">
-                                        <h2 class="card-title text-2xl font-bold">Safia Chowdhury</h2>
-                                        <p  class="text-base font-medium">Fruits Expert</p>
-                                        <div class="flex text-primary-bg gap-3 text-2xl">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </div>
 
-                                    </div>
                                 </div>
-                                <!-- card three -->
-                                <div class="card ">
-                                    <figure class="px-10 pt-10 ">
-                                        <img src="images/member3.png" alt="Shoes" class="rounded-full" />
-                                    </figure>
-                                    <div class="card-body items-center text-center text-white">
-                                        <h2 class="card-title text-2xl font-bold">Rokib Hossain</h2>
-                                        <p  class="text-base font-medium">Fruits Expert</p>
-                                        <div class="flex text-primary-bg gap-3 text-2xl">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- card four -->
-                                <div class="card ">
-                                    <figure class="px-10 pt-10 ">
-                                        <img src="images/member4.png" alt="Shoes" class="rounded-full" />
-                                    </figure>
-                                    <div class="card-body items-center text-center text-white">
-                                        <h2 class="card-title text-2xl font-bold ">Chaity</h2>
-                                        <p  class="text-base font-medium">Fruits Expert</p>
-                                        <div class="flex text-primary-bg gap-3 text-2xl">
-                                            <i class="fa-brands fa-facebook"></i>
-                                            <i class="fa-brands fa-twitter"></i>
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- card four end -->
                             </div>
+                            <!-- card two -->
+                            <div class="card ">
+                                <figure class="px-10 pt-10 ">
+                                    <img src="images/member2.png" alt="Shoes" class="rounded-full" />
+                                </figure>
+                                <div class="card-body items-center text-center text-white">
+                                    <h2 class="card-title text-2xl font-bold">Safia Chowdhury</h2>
+                                    <p class="text-base font-medium">Fruits Expert</p>
+                                    <div class="flex text-primary-bg gap-3 text-2xl">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- card three -->
+                            <div class="card ">
+                                <figure class="px-10 pt-10 ">
+                                    <img src="images/member3.png" alt="Shoes" class="rounded-full" />
+                                </figure>
+                                <div class="card-body items-center text-center text-white">
+                                    <h2 class="card-title text-2xl font-bold">Rokib Hossain</h2>
+                                    <p class="text-base font-medium">Fruits Expert</p>
+                                    <div class="flex text-primary-bg gap-3 text-2xl">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- card four -->
+                            <div class="card ">
+                                <figure class="px-10 pt-10 ">
+                                    <img src="images/member4.png" alt="Shoes" class="rounded-full" />
+                                </figure>
+                                <div class="card-body items-center text-center text-white">
+                                    <h2 class="card-title text-2xl font-bold ">Chaity</h2>
+                                    <p class="text-base font-medium">Fruits Expert</p>
+                                    <div class="flex text-primary-bg gap-3 text-2xl">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- card four end -->
                         </div>
                     </div>
+
                 </div>
+
+
+            </div>
+
         </section>
 
 
